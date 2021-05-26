@@ -1,0 +1,22 @@
+pip install virtualenv
+
+virtualenv internship_venv
+
+(cmd)internship_venv\Scripts\activate
+
+pip install django
+
+(cmd)deactivate
+
+pip freeze
+
+(cmd)internship_venv\Scripts\activate
+
+pip freeze
+
+django-admin
+
+django-admin startproject internship
+
+
+
