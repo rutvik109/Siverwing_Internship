@@ -1,0 +1,16 @@
+pthon manage.py createsuperuser
+
+python manage.py migrate
+
+pthon manage.py createsuperuser
+
+python manage.py runserver
+
+from django.urls import path
+from .views import home
+
+urlpatterns = [
+    path('home/',home,name='home'),
+]
+
+python manage.py collectstatic

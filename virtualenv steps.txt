@@ -18,5 +18,7 @@ django-admin
 
 django-admin startproject internship
 
+python manage.py runserver
+
 
 
