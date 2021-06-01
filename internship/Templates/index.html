@@ -17,32 +17,32 @@
 		<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
 		<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 		<!-- animate css -->
         <link rel="stylesheet" href="{% static 'css/animate.css' %}">
 		<!-- pe-icon-7-stroke -->
 		<link rel="stylesheet" href="{% static 'css/pe-icon-7-stroke.min.css' %}">
 		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
         <!-- Image Zoom CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/img-zoom/jquery.simpleLens.css">
+        <link rel="stylesheet" href="{% static 'css/img-zoom/jquery.simpleLens.css' %}">
 		<!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
 		<!-- nivo slider CSS
 		============================================ -->
-		<link rel="stylesheet" href="lib/css/nivo-slider.css" type="text/css" />
-		<link rel="stylesheet" href="lib/css/preview.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="{% static 'lib/css/nivo-slider.css' %}" type="text/css" />
+		<link rel="stylesheet" href="{% static 'lib/css/preview.css' %}" type="text/css" media="screen" />
 		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
 		<!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
 		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 		<!-- modernizr css -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -81,7 +81,7 @@
 					<div class="row">
 						<div class="col-sm-2 col-md-2 col-xs-4">
 							<div class="logo">
-								<a href="index.html"><img src="img/logo.png" alt="" /></a>
+								<a href="index.html"><img src="{% static 'img/logo.png' %}" alt="" /></a>
 							</div>
 						</div>
 						<div class="col-sm-10 col-md-10 col-xs-8 static">
@@ -346,7 +346,7 @@
                                         <li><a href="cart.html"><i class="fa fa-shopping-cart"></i><span class="color1">2</span></a>
                                             <ul class="drop-cart">
                                                 <li>
-                                                    <a href="cart.html"><img src="img/cart/1.png" alt="" /></a>
+                                                    <a href="cart.html"><img src="{% static 'img/cart/1.png' %}" alt="" /></a>
                                                     <div class="add-cart-text">
                                                         <p><a href="#">White Shirt</a></p>
                                                         <p>$50.00</p>
@@ -358,7 +358,7 @@
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <a href="cart.html"><img src="img/cart/2.png" alt="" /></a>
+                                                    <a href="cart.html"><img src="{% static 'img/cart/2.png' %}" alt="" /></a>
                                                     <div class="add-cart-text">
                                                         <p><a href="#">White Shirt</a></p>
                                                         <p>$50.00 x 2</p>
@@ -397,8 +397,8 @@
             <div class="main-slider an-si">
                 <div class="bend niceties preview-2 hm-ver-1">
                     <div id="ensign-nivoslider-2" class="slides">	
-                        <img src="img/slider/1.png" alt="" title="#slider-direction-3"  />
-                        <img src="img/slider/2.png" alt="" title="#slider-direction-1"  />
+                        <img src="{% static 'img/slider/1.png' %}" alt="" title="#slider-direction-3"  />
+                        <img src="{% static 'img/slider/2.png' %}" alt="" title="#slider-direction-1"  />
                     </div>
                     <!-- direction 1 -->
                     <div id="slider-direction-3" class="t-cn slider-direction Builder">
@@ -453,7 +453,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="banner-box banner-box-re">
                                 <a href="#">
-                                    <img alt="" src="img/banner/2.jpg">
+                                    <img alt="" src="{% static 'img/banner/2.jpg' %}">
                                     <div>
                                         <h2>
                                             Dynamic
@@ -465,7 +465,7 @@
                             </div>
                             <div class="banner-box res-btm">
                                 <a href="#">
-                                    <img alt="" src="img/banner/3.jpg">
+                                    <img alt="" src="{% static 'img/banner/3.jpg' %}">
                                     <div>
                                         <h2>
                                             Dynamic
@@ -479,7 +479,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="banner-container banner-box res-btm">
                                 <a href="#">
-                                    <img alt="" src="img/banner/r6.png">
+                                    <img alt="" src="{% static 'img/banner/r6.png' %}">
                                     <div>
                                         <h2>
                                             Dynamic
@@ -493,7 +493,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="banner-box banner-box-re">
                                 <a href="#">
-                                    <img alt="" src="img/banner/4.jpg">
+                                    <img alt="" src="{% static 'img/banner/4.jpg' %}">
                                     <div>
                                         <h2>
                                             Dynamic
@@ -505,7 +505,7 @@
                             </div>
                             <div class="banner-box">
                                 <a href="#">
-                                    <img alt="" src="img/banner/5.jpg">
+                                    <img alt="" src="{% static 'img/banner/5.jpg' %}">
                                     <div>
                                         <h2>
                                             Dynamic
@@ -557,8 +557,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/1.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/2.jpg">
+                                            <img src="{% static 'img/products/1.jpg'%}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/2.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -587,8 +587,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/3.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/4.jpg">
+                                            <img src="{% static 'img/products/3.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/4.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -617,8 +617,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/5.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/6.jpg">
+                                            <img src="{% static 'img/products/5.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/6.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -644,8 +644,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/7.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/8.jpg">
+                                            <img src="{% static 'img/products/7.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/8.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -674,8 +674,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/9.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/10.jpg">
+                                            <img src="{% static 'img/products/9.jpg' 3%}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/10.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -704,8 +704,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/14.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/14.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -737,8 +737,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/15.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/14.jpg">
+                                            <img src="{% static 'img/products/15.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/14.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -767,8 +767,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/2.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/1.jpg">
+                                            <img src="{% static 'img/products/2.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/1.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -797,8 +797,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/4.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/3.jpg">
+                                            <img src="{% static 'img/products/4.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/3.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -824,8 +824,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -859,8 +859,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/12.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/11.jpg">
+                                            <img src="{% static 'img/products/12.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/11.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -889,8 +889,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/1.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/2.jpg">
+                                            <img src="{% static 'img/products/1.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/2.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -919,8 +919,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/3.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/4.jpg">
+                                            <img src="{% static 'img/products/3.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/4.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -946,8 +946,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/5.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/6.jpg">
+                                            <img src="{% static 'img/products/5.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/6.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -979,8 +979,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/8.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/7.jpg">
+                                            <img src="{% static 'img/products/8.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/7.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1006,8 +1006,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/9.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/10.jpg">
+                                            <img src="{% static 'img/products/9.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/10.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1036,8 +1036,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{%  static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1066,8 +1066,9 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/14.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/13.jpg">
+                                            <img src="{% static 'img/products/14.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static
+                                             'img/products/13.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1099,8 +1100,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/15.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/15.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1129,8 +1130,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/1.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/1.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1167,8 +1168,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/10.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/9.jpg">
+                                            <img src="{% static 'img/products/10.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/9.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1194,8 +1195,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1224,8 +1225,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/14.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/13.jpg">
+                                            <img src="{% static 'img/products/14.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/13.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1254,8 +1255,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/15.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/8.jpg">
+                                            <img src="{% static 'img/products/15.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/8.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1287,8 +1288,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/6.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/7.jpg">
+                                            <img src="{% static 'img/products/6.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/7.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1314,8 +1315,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/4.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/5.jpg">
+                                            <img src="{% static 'img/products/4.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/5.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1347,8 +1348,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/2.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/1.jpg">
+                                            <img src="{% static 'img/products/2.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/1.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1377,8 +1378,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/13.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/15.jpg">
+                                            <img src="{% static 'img/products/13.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/15.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1407,8 +1408,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/7.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/7.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1434,8 +1435,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/10.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/10.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1472,8 +1473,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/1.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/2.jpg">
+                                            <img src="{% static 'img/products/1.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/2.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1502,8 +1503,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/3.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/4.jpg">
+                                            <img src="{% static 'img/products/3.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/4.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1532,8 +1533,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/5.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/6.jpg">
+                                            <img src="{% static 'img/products/5.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/6.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1559,8 +1560,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/8.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/7.jpg">
+                                            <img src="{% static 'img/products/8.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/7.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1592,8 +1593,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/9.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/10.jpg">
+                                            <img src="{% static 'img/products/9.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/10.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1622,8 +1623,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1652,8 +1653,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/14.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/13.jpg">
+                                            <img src="{% static 'img/products/14.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/13.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1682,8 +1683,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/15.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/1.jpg">
+                                            <img src="{% static 'img/products/15.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/1.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1712,8 +1713,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1742,8 +1743,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/11.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/11.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1780,8 +1781,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/6.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/7.jpg">
+                                            <img src="{% static 'img/products/6.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/7.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1810,8 +1811,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/9.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/8.jpg">
+                                            <img src="{% static 'img/products/9.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/8.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1843,8 +1844,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/3.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/7.jpg">
+                                            <img src="{% static 'img/products/3.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/7.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1870,8 +1871,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/8.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/2.jpg">
+                                            <img src="{% static 'img/products/8.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/2.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1900,8 +1901,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/1.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/15.jpg">
+                                            <img src="{% static 'img/products/1.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/15.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1930,8 +1931,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/14.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/8.jpg">
+                                            <img src="{% static 'img/products/14.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/8.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1960,8 +1961,8 @@
 								<div class="single-product">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/2.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/1.jpg">
+                                            <img src="{% static 'img/products/2.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/1.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -1987,8 +1988,8 @@
 								<div class="single-product margin-top">
                                     <div class="product-img">
                                         <a href="#">
-                                            <img src="img/products/7.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/4.jpg">
+                                            <img src="{% static 'img/products/7.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/4.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -2020,8 +2021,8 @@
                                             <span>new</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/5.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/6.jpg">
+                                            <img src="{% static 'img/products/5.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/6.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -2050,8 +2051,8 @@
                                             <span>sale</span>
                                         </div>
                                         <a href="#">
-                                            <img src="img/products/9.jpg" alt="Product Title" />
-                                            <img class="secondary-image" alt="Product Title" src="img/products/12.jpg">
+                                            <img src="{% static 'img/products/9.jpg' %}" alt="Product Title" />
+                                            <img class="secondary-image" alt="Product Title" src="{% static 'img/products/12.jpg' %}">
                                         </a>
                                     </div>
                                     <div class="product-dsc">
@@ -2105,7 +2106,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. <br>Ut enim ad minim  veniam, quis nostrud exercitation ullamco  laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                     </div>
                                     <div class="testimonial-img">
-                                        <a href="#"><img src="img/testimonial/1.png" alt="Title" /></a>
+                                        <a href="#"><img src="{% static 'img/testimonial/1.png' %}" alt="Title" /></a>
                                         <h4><a href="#">Raymond Morales</a></h4>
                                         <span>chairman</span>
                                     </div>
@@ -2116,7 +2117,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                     </div>
                                     <div class="testimonial-img">
-                                        <a href="#"><img src="img/testimonial/2.png" alt="Title" /></a>
+                                        <a href="#"><img src="{% static 'img/testimonial/2.png' %}" alt="Title" /></a>
                                         <h4><a href="#">Raymond Morales</a></h4>
                                         <span>chairman</span>
                                     </div>
@@ -2127,7 +2128,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                     </div>
                                     <div class="testimonial-img">
-                                        <a href="#"><img src="img/testimonial/3.png" alt="Title" /></a>
+                                        <a href="#"><img src="{% static 'img/testimonial/3.png' %}" alt="Title" /></a>
                                         <h4><a href="#">Raymond Morales</a></h4>
                                         <span>chairman</span>
                                     </div>
@@ -2162,8 +2163,8 @@
 										<span>sale</span>
 									</div>
 									<a href="#">
-									    <img src="img/products/2.jpg" alt="Product Title" />
-									    <img class="secondary-image" alt="Product Title" src="img/products/1.jpg">
+									    <img src="{% static 'img/products/2.jpg' %}" alt="Product Title" />
+									    <img class="secondary-image" alt="Product Title" src="{% static 'img/products/1.jpg' %}">
 								    </a>
 								</div>
 								<div class="product-dsc">
@@ -2195,8 +2196,8 @@
 										<span>new</span>
 									</div>
 									<a href="#">
-									    <img src="img/products/4.jpg" alt="Product Title" />
-									    <img class="secondary-image" alt="Product Title" src="img/products/3.jpg">
+									    <img src="{% static 'img/products/4.jpg' %}" alt="Product Title" />
+									    <img class="secondary-image" alt="Product Title" src="{% static 'img/products/3.jpg' %}">
 								    </a>
 								</div>
 								<div class="product-dsc">
@@ -2225,8 +2226,8 @@
 							<div class="single-product">
 								<div class="product-img">
 									<a href="#">
-									    <img src="img/products/6.jpg" alt="Product Title" />
-									    <img class="secondary-image" alt="Product Title" src="img/products/5.jpg">
+									    <img src="{% static 'img/products/6.jpg' %}" alt="Product Title" />
+									    <img class="secondary-image" alt="Product Title" src="{% static 'img/products/5.jpg' %}">
 								    </a>
 								</div>
 								<div class="product-dsc">
@@ -2255,8 +2256,8 @@
 							<div class="single-product">
 								<div class="product-img">
 									<a href="#">
-									    <img src="img/products/8.jpg" alt="Product Title" />
-									    <img class="secondary-image" alt="Product Title" src="img/products/7.jpg">
+									    <img src="{% static 'img/products/8.jpg' %}" alt="Product Title" />
+									    <img class="secondary-image" alt="Product Title" src="{% static 'img/products/7.jpg' %}">
 								    </a>
 								</div>
 								<div class="product-dsc">
@@ -2288,8 +2289,8 @@
 										<span>sale</span>
 									</div>
 									<a href="#">
-									    <img src="img/products/10.jpg" alt="Product Title" />
-									    <img class="secondary-image" alt="Product Title" src="img/products/9.jpg">
+									    <img src="{% static 'img/products/10.jpg' %}" alt="Product Title" />
+									    <img class="secondary-image" alt="Product Title" src="{% static 'img/products/9.jpg' %}">
 								    </a>
 								</div>
 								<div class="product-dsc">
@@ -2321,8 +2322,8 @@
 										<span>new</span>
 									</div>
 									<a href="#">
-									    <img src="img/products/1.jpg" alt="Product Title" />
-									    <img class="secondary-image" alt="Product Title" src="img/products/2.jpg">
+									    <img src="{% static 'img/products/1.jpg' %}" alt="Product Title" />
+									    <img class="secondary-image" alt="Product Title" src="{% static 'img/products/2.jpg' %}">
 								    </a>
 								</div>
 								<div class="product-dsc">
@@ -2370,7 +2371,7 @@
 						<div class="col-xs-12">
 							<div class="blog-container-inner">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="img/blog/111.jpg"></a>
+                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="{% static 'img/blog/111.jpg' %}"></a>
                                 </div>
                                 <div class="visual-inner">
                                     <h2 class="blog-title">
@@ -2395,7 +2396,7 @@
 						<div class="col-xs-12">
 							<div class="blog-container-inner">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="img/blog/222.jpg"></a>
+                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="{% static 'img/blog/222.jpg' %}"></a>
                                 </div>
                                 <div class="visual-inner">
                                     <h2 class="blog-title">
@@ -2420,7 +2421,7 @@
 						<div class="col-xs-12">
 							<div class="blog-container-inner">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="img/blog/333.jpg"></a>
+                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="{% static 'img/blog/333.jpg' %}"></a>
                                 </div>
                                 <div class="visual-inner">
                                     <h2 class="blog-title">
@@ -2445,7 +2446,7 @@
 						<div class="col-xs-12">
 							<div class="blog-container-inner">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="img/blog/111.jpg"></a>
+                                    <a href="#"><img class="attachment-blog-list wp-post-image" alt="blog-2" src="{% static 'img/blog/111.jpg' %}"></a>
                                 </div>
                                 <div class="visual-inner">
                                     <h2 class="blog-title">
@@ -2490,25 +2491,25 @@
 													<div class="quick-image">
 														<div class="single-quick-image tab-content text-center">
 															<div class="tab-pane  fade in active" id="sin-pro-1">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 															<div class="tab-pane fade in" id="sin-pro-2">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 															<div class="tab-pane fade in" id="sin-pro-3">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 															<div class="tab-pane fade in" id="sin-pro-4">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 														</div>
 														<div class="quick-thumb">
 															<div class="nav nav-tabs">
 																<ul>
-																	<li><a data-toggle="tab" href="#sin-pro-1"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
-																	<li><a data-toggle="tab" href="#sin-pro-2"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
-																	<li><a data-toggle="tab" href="#sin-pro-3"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
-																	<li><a data-toggle="tab" href="#sin-pro-4"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-1"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-2"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-3"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-4"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
 																</ul>
 															</div>
 														</div>
@@ -2612,25 +2613,25 @@
 													<div class="quick-image">
 														<div class="single-quick-image tab-content text-center">
 															<div class="tab-pane  fade in active" id="sin-pro-5">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 															<div class="tab-pane fade in" id="sin-pro-6">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 															<div class="tab-pane fade in" id="sin-pro-7">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 															<div class="tab-pane fade in" id="sin-pro-8">
-																<img src="img/quick-view/10.jpg" alt="" />
+																<img src="{% static 'img/quick-view/10.jpg' %}" alt="" />
 															</div>
 														</div>
 														<div class="quick-thumb">
 															<div class="nav nav-tabs">
 																<ul>
-																	<li><a data-toggle="tab" href="#sin-pro-5"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
-																	<li><a data-toggle="tab" href="#sin-pro-6"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
-																	<li><a data-toggle="tab" href="#sin-pro-7"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
-																	<li><a data-toggle="tab" href="#sin-pro-8"> <img src="img/quick-view/10.jpg" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-5"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-6"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-7"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
+																	<li><a data-toggle="tab" href="#sin-pro-8"> <img src="{% static 'img/quick-view/10.jpg' %}" alt="quick view" /> </a></li>
 																</ul>
 															</div>
 														</div>
@@ -2735,42 +2736,42 @@
 							<div id="brand-logo" class="re-owl-carousel21 owl-carousel product-slider owl-theme">
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/1.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/1.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/2.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/2.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/3.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/3.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/4.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/4.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/5.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/5.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/6.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/6.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/1.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/1.png' %}" alt="" /></a>
 									</div>
 								</div>
 								<div class="col-xs-12">
 									<div class="single-brand">
-										<a href="#"><img src="img/brand/3.png" alt="" /></a>
+										<a href="#"><img src="{% static 'img/brand/3.png' %}" alt="" /></a>
 									</div>
 								</div>
 							</div>
@@ -2945,31 +2946,31 @@
         
 		<!-- all js here -->
 		<!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="{% static 'js/vendor/jquery-1.12.0.min.js' %}"></script>
 		<!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
         <!-- parallax js -->
-        <script src="js/parallax.min.js"></script>
+        <script src="{% static 'js/parallax.min.js' %}"></script>
 		<!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
         <!-- Img Zoom js -->
-		<script src="js/img-zoom/jquery.simpleLens.min.js"></script>
+		<script src="{% static 'js/img-zoom/jquery.simpleLens.min.js' %}"></script>
 		<!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
 		<!-- jquery.countdown js -->
-        <script src="js/jquery.countdown.min.js"></script>
+        <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
 		<!-- Nivo slider js
 		============================================ --> 		
-		<script src="lib/js/jquery.nivo.slider.js" type="text/javascript"></script>
-		<script src="lib/home.js" type="text/javascript"></script>
+		<script src="{% static 'lib/js/jquery.nivo.slider.js' %}" type="text/javascript"></script>
+		<script src="{% static 'lib/home.js' %}" type="text/javascript"></script>
 		<!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>
+        <script src="{% static 'js/jquery-ui.min.js' %}"></script>
 		<!-- sticky js -->
-        <script src="js/sticky.js"></script>
+        <script src="{% static 'js/sticky.js' %}"></script>
 		<!-- plugins js -->
-        <script src="js/plugins.js"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
     </body>
 
 <!-- Mirrored from d29u17ylf1ylz9.cloudfront.net/tasnm-preview/tasnm/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jul 2020 04:59:20 GMT -->
