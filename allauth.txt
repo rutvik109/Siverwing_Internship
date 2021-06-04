@@ -1,0 +1,5 @@
+pip install django-allauth
+
+python manage.py migrate
+
+python manage.py runserver
