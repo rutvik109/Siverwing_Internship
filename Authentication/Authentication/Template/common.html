@@ -66,13 +66,13 @@
 								<ul>
                                     {% if user.is_authenticated %}
                                         <li><a href="my-account.html"><i class="fa fa-user"></i>My account</a></li>
-                                        <li><a href="{% url 'Home:Products:Cart:add_to_cart' %}"><i class="fa fa-shopping-cart"></i>My cart</a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i>My cart</a></li>
                                         <li><a href="wishlist.html"><i class="fa fa-heart"></i>My wishlist</a></li>
-                                        <li><a href="{% url 'account_logout' %}"><i class="fa fa-lock"></i>Log out</a></li>
-                                        <li><a href="{% url 'account_change_password' %}"><i class="fa fa-lock"></i>Change Password</a></li>
+                                        <li><a href="#"><i class="fa fa-lock"></i>Log out</a></li>
+                                        <li><a href="#"><i class="fa fa-lock"></i>Change Password</a></li>
                                     {% else %}
-									    <li><a href="{% url 'account_login' %}"><i class="fa fa-lock"></i>Login</a></li>
-                                        <li><a href="{% url 'account_signup' %}"><i class="fa fa-lock"></i>Signup</a></li>
+									    <li><a href="#"><i class="fa fa-lock"></i>Login</a></li>
+                                        <li><a href=""><i class="fa fa-lock"></i>Signup</a></li>
                                     {% endif %}
 								</ul>
 							</div>
@@ -85,7 +85,7 @@
 					<div class="row">
 						<div class="col-sm-2 col-md-2 col-xs-4">
 							<div class="logo">
-								<a href="{% url 'Home:Home' %}" style="font-family: Helvetica, Arial, sans-serif; font-size: 50px; color: navajowhite"  >apparel</a>
+								<a href="#" style="font-family: Helvetica, Arial, sans-serif; font-size: 50px; color: navajowhite"  >apparel</a>
 							</div>
 						</div>
 						<div class="col-sm-10 col-md-10 col-xs-8 static">
@@ -93,7 +93,7 @@
 							    <div class="mainmenu clearfix hidden-sm hidden-xs">
                                     <nav>
                                         <ul>
-                                            <li><a href="{% url 'Home:Home' %}">Home</a>
+                                            <li><a href="#">Home</a>
 
                                             </li>
                                             <li><a href="shop.html">Shop</a>
@@ -146,8 +146,8 @@
                                                     <li><a href="wishlist.html">Wishlist</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="{% url 'Home:about' %}">About</a></li>
-                                            <li><a href="{% url 'Home:contact' %}">Contact</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -156,7 +156,7 @@
                                     <div class="mobile-menu">
                                         <nav id="dropdown">
                                             <ul>
-                                                <li><a href="{% url 'Home:Home' %}">Home</a>
+                                                <li><a href="#">Home</a>
                                                     <ul>
                                                         <li><a href="index.html">Home Version One</a></li>
                                                         <li><a href="index-2.html">Home Version Two</a></li>
@@ -339,7 +339,7 @@
                                 <div class="right-header re-right-header">
                                     <ul>
                                         <li class="re-icon tnm"><i class="fa fa-search" aria-hidden="true"></i>
-                                            <form method="get" id="searchform" action="{% url 'Home:Products:search' %}">
+                                            <form method="get" id="searchform" action="#">
                                                 <input type="text" value="" name="search" id="ws" placeholder="Search product..." />
                                                 <button type="submit"><i class="pe-7s-search"></i></button>
                                             </form>
